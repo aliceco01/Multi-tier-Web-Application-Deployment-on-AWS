@@ -29,8 +29,9 @@ Follow the steps below to deploy the multi-tier web application on AWS:
 Clone the project repository:
 
 
-<<hello>> 
-׳git clone https://github.com/your-username/project-repo.git׳
+git clone https://github.com/your-username/project-repo.git
+
+
 Change to the project directory:
 
 
@@ -38,7 +39,7 @@ Copy code
 cd project-repo
 Initialize Terraform and download the necessary providers:
 
-shell
+
 Copy code
 terraform init
 Review the variables.tf file and update the configuration values as needed.
@@ -47,14 +48,14 @@ Modify the desired settings in the main.tf file, such as instance types, network
 
 Preview the infrastructure changes:
 
-shell
+
 Copy code
 terraform plan
 Review the output and ensure that the planned changes align with your expectations.
 
 Deploy the infrastructure:
 
-shell
+
 Copy code
 terraform apply
 Confirm the deployment by typing "yes" when prompted.
@@ -66,22 +67,15 @@ Once the deployment is successful, you will see the output containing the URLs a
 To destroy the infrastructure and clean up resources when no longer needed, run:
 ׳
 ׳׳׳
-## Copy code
-terraform destroy
+
+' terraform destroy
 Confirm the destruction by typing "yes" when prompted.
 
 ## Monitoring and Management
+ 
 To monitor the deployed infrastructure, access the AWS Management Console and navigate to CloudWatch for metrics, logs, and alarms.
 For troubleshooting and debugging, refer to the Terraform logs and AWS service-specific logs.
 Update the infrastructure code using Terraform to make changes to the deployment or add new features.
-Contributing
-We welcome contributions to enhance the project. If you find any issues or have suggestions, please submit an issue or pull request on the project repository.
 
 
-## Acknowledgments
-  
-This project was inspired by the need for a scalable and fault-tolerant web application deployment on AWS. We would like to thank the open-source community for their valuable contributions and the Terraform team for developing such a powerful tool.
 
-Please feel free to reach out to the project maintainers if you have any questions or need assistance with the deployment process.
-
-Happy deploying!
